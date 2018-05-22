@@ -1,14 +1,9 @@
 from flask import Flask
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route("/")
-def main():
-    return "Welcome!"
-
-@app.route('/howareyou')
+@application.route("/")
 def hello():
-    return 'I am good, how about you?'
+    return "Hello, Welcome to Openshift?"
 
 if __name__ == "__main__":
-    app.run()
-
+    application.run()
